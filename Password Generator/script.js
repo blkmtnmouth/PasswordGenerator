@@ -31,32 +31,24 @@ var generateBtn = document.querySelector("#generate");
 
       if (lowerCase === true){
         masterChar = masterChar + lowChar;
-        console.log(masterChar);
       }   
 
       if (upperCase === true){
         masterChar = masterChar + upChar;
-        console.log(masterChar); 
       }
 
       if (numReg === true){
         masterChar = masterChar + numbChar;
-        console.log(masterChar);
       }
 
       if (special === true){
         masterChar = masterChar + specChar;
-        console.log(masterChar);
       }
 
       var i; 
       for (i = 0; i < passLength; i++){
        var index = Math.floor(Math.random() * masterChar.length);
         passWord = passWord + masterChar.charAt(index);
-        console.log(i);
-        console.log(index);
-        console.log(masterChar.charAt(index));
-        console.log(passWord);
       } 
 
       return passWord;
